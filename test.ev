@@ -1,0 +1,22 @@
+/*
+ * This is simple example
+ */
+
+// This is comment
+
+fio = 'Oleg';
+fioOther = ??;
+
+name = fio;
+helloName = 'Hello, ' + name + '!';
+
+console.log(helloName);
+
+fio = 'Ivan';
+fio = 'Alex';
+name = fioOther;
+fioOther = 'Other name';
+
+timeEvent = @ setTimeout(timeEvent, 2000);
+
+fioOther = 'Time' @ timeEvent;
