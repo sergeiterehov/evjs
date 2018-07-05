@@ -1,0 +1,30 @@
+// v2
+
+state name = 'Ivan';
+state message = 'Hello' + name = '!';
+
+name = 'Alex';
+
+state fio = 'Bob';
+name = {
+    if (fio === 'Alex') {
+        return 'Mr';
+    } else {
+        return 'Ms';
+    }
+} + '. ' + fio;
+
+state generateFio = (x) {
+    return 'generated ' + x;
+};
+
+fio = generated('first');
+state fio2 = generated('second');
+
+state Human = (name, age, gender, weigth, height) {
+    //
+};
+
+state bob = Human('bob', 18, 1);
+bob.weigth = 82;
+bob.height = 187;
