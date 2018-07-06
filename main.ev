@@ -33,3 +33,18 @@ state bob = Human('bob', 18, 1);
 bob.nickname = 'Bobby';
 
 export Human;
+
+state a = 1;
+state b = 2;
+
+state f = a + b;
+
+// all operation in this block will be sync
+sync {
+    a = 3;
+    b = 4;
+    a = 7;
+
+    // this operation will be async (after all)
+    async b = 5;
+};
