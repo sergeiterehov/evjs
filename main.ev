@@ -22,9 +22,14 @@ fio = generated('first');
 state fio2 = generated('second');
 
 state Human = (name, age, gender, weigth, height) {
-    //
+    state nickname;
+    state hello = 'Hello, ' + name + ' (' + nickname +')!';
+
+    export nickname;
+    export hello;
 };
 
 state bob = Human('bob', 18, 1);
-bob.weigth = 82;
-bob.height = 187;
+bob.nickname = 'Bobby';
+
+export Human;
